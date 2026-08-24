@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 60% 4%;
+    --foreground: 205 40% 96%;
+
+    --card: 222 45% 8%;
+    --card-foreground: 205 40% 96%;
+
+    --muted: 220 35% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --border: 217 40% 18%;
+    --input: 217 40% 18%;
+    --ring: 195 100% 50%;
+
+    --radius: 1.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(0, 191, 255, 0.16), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(0, 191, 255, 0.08), transparent);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px rgba(0, 191, 255, 0.55);
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.4) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.4) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}
