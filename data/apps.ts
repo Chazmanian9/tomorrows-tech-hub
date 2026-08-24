@@ -11,12 +11,12 @@ export const apps: HubApp[] = [
     name: "AI Beginner Guide",
     description: "A plain-language walkthrough for getting started with AI tools.",
     // TODO: replace with the real URL.
-    href: "https://example.com/ai-beginner-guide",
+    href: "https://ai-beginners-guide.vercel.app/",
   },
   {
     name: "Resume Builder",
     description: "Build and polish a resume with AI-assisted suggestions.",
     // TODO: replace with the real URL.
-    href: "https://example.com/resume-builder",
+    href: "https://tomorrows-tech-resume-builder.vercel.app/",
   },
 ];
